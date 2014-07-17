@@ -56,9 +56,9 @@ def userTest():
 
     userChoice = input("Choose what model you wish to study('osi' or 'tcp')\n").lower()
     print(userChoice)
-    if userChoice =="osi":
+    if userChoice == 'osi':
         test = osiLayers
-    if userChoice == 'tcp':
+    elif userChoice == 'tcp':
         test = tcpipLayers
     else:
         print("Input not recongized..please only enter ('osi' or 'tcp')")
