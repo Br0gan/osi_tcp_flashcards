@@ -54,11 +54,15 @@ def userTest():
     global osiLayers
     global tcpipLayers
 
-    userChoice = input("Choose what model you wish to study\n").lower()
-    if userChoice == 'osi':
+    userChoice = input("Choose what model you wish to study('osi' or 'tcp')\n").lower()
+    print(userChoice)
+    if userChoice =="osi":
         test = osiLayers
     if userChoice == 'tcp':
         test = tcpipLayers
+    else:
+        print("Input not recongized..please only enter ('osi' or 'tcp')")
+        userTest()
     runTest(test)
 
 userTest()
